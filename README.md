@@ -5,11 +5,11 @@ The goal of this Capstone project is to explore the Julia space, and see if a su
 
 To accomplish these goals, an intermediate goal is to have an out of the box model working within 1 week. That is, by Tuesday, March 31st. The steps to do so are currently listed as issues. Even if it appears your step relies on a previous step before you can complete it, you can still create dummy data and do your step without waiting on anyone. 
 
-Also, remember to use good github practices. 
-Don't commit directly to master
-Pull from master
-Checkout a branch
-Make your changes
-Pull from master before pushing to your remote branch
-
+Also, remember to use good github practices.<br>
+Don't commit directly to master<br> 
+Pull from master<br> 
+Checkout a branch<br> 
+Make your changes<br> 
+Pull from master before pushing to your remote branch<br> 
+<br> 
 Add a pull request when you feel your branch is ready and others in the group will review and merge.
