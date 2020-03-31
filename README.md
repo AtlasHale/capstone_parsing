@@ -13,3 +13,7 @@ Make your changes<br>
 Pull from master before pushing to your remote branch<br> 
 <br> 
 Add a pull request when you feel your branch is ready and others in the group will review and merge.
+
+
+To run a script, make sure your environment has all the dependancies listen in the Project.toml file, and then from the Julia prompt  include("/path/to/script"), for example include("/home/connor/Desktop/capstone_parsing/src/tokenArray.jl")
+
