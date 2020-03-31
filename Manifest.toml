@@ -1,0 +1,8 @@
+# This file is machine-generated - editing it directly is not advised
+
+[[Tokenize]]
+git-tree-sha1 = "cd7c52082d866a9fab51e28b12e3a20fa30ebd4c"
+repo-rev = "master"
+repo-url = "https://github.com/JuliaLang/Tokenize.jl.git"
+uuid = "0796e94c-ce3b-5d07-9a54-7f471281c624"
+version = "0.5.8"
