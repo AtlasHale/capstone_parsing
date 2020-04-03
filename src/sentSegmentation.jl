@@ -1,6 +1,4 @@
 function sentSeg(s)
-    counter = 0
-    str = ""
     temp = []
     tempSmall = []
     for i in s
@@ -13,6 +11,6 @@ function sentSeg(s)
     return temp
 end
     
-s = ["Here", "is", "a", "sententce", "this.", "Home", "Mr.", "Ok", "M.", "Another", "one."]
+sampleCode = ["Here", "is", "a", "sententce", "this.", "Home", "Mr.", "Ok", "M.", "Another", "one."]
     
-println(sentSeg(s))
+println(sentSeg(sampleCode))
