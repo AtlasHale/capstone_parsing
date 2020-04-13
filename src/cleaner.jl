@@ -1,42 +1,21 @@
 using TextAnalysis
+using Languages
 
-function cleaner(arr::{String,1})
+function cleaner(arr::Array{String})
 
     clean = []
     for s in arr
         strip(s)
-        prepare!(s, strip_punctuation | strip_stopwords)
+        remove_corrupt_utf8!(s)
+        prepare!(s, strip_punctuation | strip_stopwords | strip_non_letters)
+        #stem!(s)
         push!(clean, s)
     end
     
     return clean
   
-  end
+end
   
-  s = ["¿Does it handle unicode well?", "y!es#"]
+s = ["¿Does it handle unicode well?", "y!es#"]
   
-  cleaner(s)
- 
-# using TextAnalysis
-
-# function cleaner(arr::{String,1})
-
-#     clean = []
-#     for s in arr
-#         strip(s)
-#         remove_corrupt_utf8!(s)
-#         remove_punctuation!(s)
-#         remove_stopwords!(s)
-#         stem!(s)
-#         ##prepare!(s, strip_punctuation | strip_stopwords)
-#         push!(clean, s)
-#     end
-    
-#     return clean
-  
-# end
-  
-#   s = ["¿Does it handle unicode well?", "y!es#"]
-  
-#   cleaner(s)
-  
+cleaner(s)
