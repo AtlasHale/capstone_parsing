@@ -1,19 +1,11 @@
-using Tokenize
+using WordTokenizers
 
 function tokenArray(vec::Array{Array,1})
     result = []
     for a in vec
         tokens = []
         for s in a
-        toks = tokenize(s)
-            for t in toks
-                val = Tokens.untokenize(t)
-                kind = Tokens.kind(t)
-                if val != " " && val != ""
-                    println(val)
-                    push!(tokens, val)
-                end
-            end
+            push!(tokens, tokenize(s))
         end
         append!(result, tokens)
     end
